@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            font-family: 'Alexandria', sans-serif;
+        }
+/* Header */
+        header{
+            text-align: center;
+            background-image: radial-gradient(red, black);
+            height:50px;
+            border:solid 5px;
+        }
+        nav{
+            border:solid 2.5px;
+            background-color: grey;
+            display:flex;
+            justify-content: center;
+        }
+/* Container 1 */
+        .cont1{
+            display: flex;
+            background-color: rgb(153, 153, 153);
+        }
+        #facts{
+            font-size:20px;
+            padding:20px;
+            border: solid 5px;
+            width:70%;
+        }
+        #selfie{
+            background-image: linear-gradient(red, black);
+            border:solid 5px;
+            width:30%;
+            height:200px;
+            text-align: center;
+        }
+/* container 2 */
+        .cont2{
+            display: flex;
+            background-color: rgb(153, 153, 153);
+        }
+        #car{
+            font-size:20px;
+            padding:20px;
+            border: solid 5px;
+            width:70%;  
+        }
+        #carimg{
+            background-image: linear-gradient(blue, grey);
+            border:solid 5px;
+            width:30%;
+            height:250px;
+            text-align: center;
+        }
+/* Container 3 */
+        .cont3{
+            display: flex;
+            background-color: rgb(153, 153, 153);
+        }
+        #edu{
+            font-size:20px;
+            padding:20px;
+            border: solid 5px;
+            width:70%;
+            height:850px;
+        }
+        #wcwm{
+            border:solid 5px;
+            width:30%;
+            height:890px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Header + Nav -->
+    <header><h1>Andrew O. Mekhail</h1></header>
+    <!-- Nav -->
+    <nav>
+        <button style="width:50px;"><a href="index.html"><span class="material-symbols-outlined">home</span>Home</a></button>
+    </nav>
+<!-- Basic Information about me -->
+    <div class="cont1">
+        <div id="facts">
+            <h3 style="text-align:center;">Some basic facts about me!</h3><br>
+            <hr>
+            <ul>
+                <li>I am Currently 16 years old</li>
+                <li>My birthday is December 23rd, 2005</li>
+                <li>I've lived in the same house/city my whole life</li>
+                <li>I have 4 cats, and one dog</li>
+            </ul>
+        </div>
+        <div id="selfie"><img src="me.jpg" alt="me" style="height:100%;"></div>
+    </div>
+<!-- My car -->
+    <div class="cont2">
+        <div id="carimg"><img src="whip.JPG" alt="whip" style="height:100%;"></div>
+        <div id="car">
+            <h3 style="text-align:center;">My Whip</h3><br><hr>
+            <p>My current whip is a 2014 Nissan Rogue SL. This car has been in my life for 8 years now, and as of July 2022, it offically became my car. Hopefully really soon, I plan to toss some subwoofers in the back. And maybe, very possible, upgrade some engine components.
+            <br><br>
+            August of 2021 was when I got my permit. When I started driving, that car started with 50k miles. Now, Decmeber of 2022, the car has gained 16k miles and is stitting at 66k miles.   
+            </p>
+        </div>
+    </div>
+<!-- Education -->
+    <div class="cont3">
+        <div id="edu">
+            <h3 style="text-align:center">My Education</h3><br><hr>
+            <p>I am a current Willow Canyon Highschool student. I am a junior and I am the class of 2024. Previously, I have attended Imagine Rose Field for Kindergarten, Western Peaks Elemenetry for 1st-5th grade, and Marley Park Elementry for 6th-8th grade.<br>
+            Class I have taken at Willow are:<br><br>
+            <b>Freshman Year:</b><br><hr>
+            <ul>
+                <li>Honors Biology 1-2</li>
+                <li>Honors Algebra 3-4</li>
+                <li>Honors Spanish 1-2</li>
+                <li>Honors Modern World History 1-2</li>
+                <li>Coding 1-2</li>
+                <li>Honors English 1-2</li>
+                <br><br><b>Sophmore Year</b><hr>
+                <li>Honors English 3-4</li>
+                <li>Spanish 3-4</li>
+                <li>Honors American English 1-2</li>
+                <li>Chemistry 1-2</li>
+                <li>Algebra 3-4</li>
+                <li>Coding 3-4</li>
+                <br><br><b>Junior Year</b><hr>
+                <li>Physics 1-2</li>
+                <li>Pre-calculus 1-2</li>
+                <li>English 5-6</li>
+                <li>Coding 1-2 (WestMEC)</li><br>
+            </ul>
+            I am also a current West-MEC student partaking in 2 year coding program.
+            </p>
+        </div>
+        <div id="wcwm">
+            <div id="wcimg"><img src="wc.png" alt="wc" style="height:100%;"></div>
+            <div id="wmimg"><img src="westmec.png" alt="wm" style="height:100%; width:400px;"></div>
+        </div>
+    </div>
+
+</body>
+</html>

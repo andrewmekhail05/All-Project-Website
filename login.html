@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Login</title>
+    <style>
+        *{
+            font-family: 'Alexandria', sans-serif;
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color: rgb(63, 63, 63);
+        }
+        .login{
+            padding:60px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+            width:300px;
+            height:100px;
+            margin:auto;
+            text-align: center;
+        }
+        #submit{
+            text-align: center;
+        }
+        #feedback{
+            text-align: center;
+            color:red;
+        }
+        #home{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="location.href = 'index.html';" id="home"><span class="material-symbols-outlined">home</span></button>
+    <h1 style="text-align:center;">Login page</h1>
+    <div class="login">
+        <div id="user">
+            Username:<input type="text" id="username" required>
+        </div>
+        <div id="pass">
+            Password:<input type="password" id="password" required>
+        </div>
+    </div>
+    <div id="submit">
+        <button id="submit" onclick="validate()">Submit</button>
+    </div>
+    <div id="feedback"></div>
+    <script>
+        var attempt = 3;
+        function validate(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "amekhail2049" && password == "pass123"){
+                window.location = "https://amekhail733.github.io/resume/";
+                return false;
+            }
+            
+            else{
+                attempt --;
+                document.getElementById('feedback').innerHTML = ("You have left "+attempt+" attempt;");
+            
+            if(attempt == 0){
+                document.getElementById("username").disabled = true;
+                document.getElementById("password").disabled = true;
+                document.getElementById("submit").disabled = true;
+                window.alert("You have ran out of attempts to login...redirecting to home...");
+                window.location = "index.html"
+            return false;
+            }
+            }
+        }
+    </script>
+</body>
